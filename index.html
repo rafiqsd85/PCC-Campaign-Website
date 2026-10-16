@@ -1,0 +1,1045 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/fav.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6D28D9" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vote-for-AYAS</title>
+  </head>
+
+  <body class="bg-white text-gray-900" id="top">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50">
+      <nav
+        class="flex items-center justify-between gap-3 bg-blue-950 p-2 shadow-md sm:px-5 lg:px-8"
+      >
+        <div class="flex shrink-0 items-center space-x-2">
+          <img
+            src="/logo.jpg"
+            alt="Logo"
+            class="h-10 w-auto rounded-full sm:h-12"
+          />
+
+          <div class="leading-tight flex flex-col">
+            <p class="text-xs font-medium text-cyan-300">
+              AYAS
+            </p>
+            <p class="text-sm font-sans text-white">
+              Vice President Candidate
+            </p>
+          </div>
+        </div>
+
+        <ul class="hidden items-center gap-1 text-white lg:flex xl:gap-3">
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#about" class="block px-3 py-2">About</a>
+          </li>
+
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#skills" class="block px-3 py-2">Skills</a>
+          </li>
+
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#experience" class="block px-3 py-2">Experience</a>
+          </li>
+
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#commitments" class="block px-3 py-2">Commitments</a>
+          </li>
+
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#promises" class="block px-3 py-2">Promises</a>
+          </li>
+
+          <li class="cursor-pointer rounded-2xl font-medium hover:border ">
+            <a href="#contact" class="block px-3 py-2">Contact</a>
+          </li>
+        </ul>
+        <a
+          href="/CV.jpeg"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden shrink-0 rounded-full border border-transparent bg-white px-4 py-2 font-semibold text-blue-950 transition hover:border-amber-50 hover:bg-blue-950 hover:text-white lg:inline-flex"
+        >
+          View CV
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          type="button"
+          class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/20 text-2xl text-white transition hover:bg-white/10 lg:hidden"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span id="menuIcon" aria-hidden="true">☰</span>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div
+        id="mobileMenu"
+        class="hidden border-t border-white/10 bg-blue-950 px-4 py-4 shadow-lg sm:px-6 lg:hidden"
+      >
+        <ul class="flex flex-col gap-1 text-white">
+          <li>
+            <a
+              href="#about"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              About
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#skills"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#experience"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              Experience
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#commitments"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              Commitments
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#promises"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              Promises
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              class="mobile-link block rounded-lg px-4 py-3 font-medium transition hover:bg-white hover:text-blue-950"
+            >
+              Contact
+            </a>
+          </li>
+
+          <li class="pt-2">
+            <a
+              href="/CV.jpeg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-link block rounded-full bg-white px-4 py-3 text-center font-semibold text-blue-950 transition hover:bg-cyan-100"
+            >
+              View CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section
+      class="relative flex min-h-[420px] w-full items-start bg-cover bg-center sm:min-h-[520px] md:min-h-[580px] lg:min-h-[650px]"
+      style="background-image: url('/banner.jpg');"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-950/80 via-blue-950/40 to-transparent"
+      ></div>
+      <div
+        class="relative z-10 ml-auto w-full px-5 pt-10 sm:w-[65%] sm:px-8 sm:pt-14 md:w-[58%] md:pt-16 lg:w-[50%] lg:px-10 lg:pt-24"
+      >
+        <span
+          class="mb-3 inline-block rounded-full border border-cyan-400/40 bg-cyan-950/60 px-3 py-2 text-[10px] font-semibold uppercase tracking-wider text-cyan-300 sm:px-4 sm:text-xs"
+        >
+          Vice President • PCC
+        </span>
+
+        <h1
+          class="mb-1 font-['Poppins',sans-serif] text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+        >
+          Saidul Karim
+          <span
+            class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+          >
+            Ayas
+          </span>
+        </h1>
+      </div>
+    </section>
+
+    <main class="bg-white text-gray-800">
+      <!-- About -->
+      <section
+        id="about"
+        class="scroll-mt-20 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-8 sm:gap-10 md:grid-cols-2 md:gap-12"
+        >
+          <div>
+            <p
+              class="mb-3 font-semibold uppercase tracking-widest text-purple-600"
+            >
+              About Me
+            </p>
+
+            <p class="mb-5 leading-7 text-gray-600 sm:leading-8">
+              I'm <span class="font-bold">Saidul Karim Ayas</span>, a Computer Science and Engineering
+              student at Port City International University. I'm passionate
+              about programming, backend web development and building
+              practical software solutions.
+            </p>
+
+            <p class="mb-5 leading-7 text-gray-600 sm:leading-8">
+              Alongside my technical learning, I have experience in office
+              management, student engagement, event coordination and youth
+              volunteer leadership.
+            </p>
+
+            <p class="leading-7 text-gray-600 sm:leading-8">
+              As a candidate for Vice President of PCIU Computer Club,
+              I want to help create more opportunities for members to learn,
+              compete, collaborate and grow.
+            </p>
+
+            <div class="mt-7 flex flex-wrap gap-3">
+              <span
+                class="rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900"
+              >
+                CSE Student
+              </span>
+
+              <span
+                class="rounded-full bg-cyan-50 px-4 py-2 text-sm font-medium text-cyan-900"
+              >
+                Student Leader
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="rounded-3xl bg-gradient-to-br from-blue-950 to-purple-800 p-6 text-white sm:p-8 md:p-10"
+          >
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-cyan-300"
+            >
+              My Journey
+            </p>
+
+            <p class="mt-4 leading-7 text-blue-100 sm:leading-8">
+              Combining technical learning with organizational experience
+              to contribute to a stronger student community.
+            </p>
+
+            <div class="mt-8 border-t border-white/20 pt-6">
+              <p class="text-sm text-blue-200">Current Education</p>
+
+              <p class="mt-1 text-lg font-semibold">
+                B.Sc. in Computer Science &amp; Engineering
+              </p>
+
+              <p class="mt-1 text-sm text-cyan-300">
+                Port City International University
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        id="skills"
+        class="scroll-mt-20 bg-slate-50 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-10 text-center sm:mb-12">
+
+            <h2
+              class="text-3xl font-extrabold text-blue-950 sm:text-4xl"
+            >
+              Skills &amp; Abilities
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 0h16v16H0z" fill="none" />
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    stroke="#8aadf4"
+                    d="M8.5 5.5h-3m6 0V3c0-.8-.7-1.5-1.5-1.5H7c-.8 0-1.5.7-1.5 1.5v2.5H3c-.8 0-1.5.7-1.5 1.5v2c0 .8.7 1.5 1.48 1.5"
+                  />
+                  <path
+                    stroke="#eed49f"
+                    d="M10.5 10.5h-3m-3 0V13c0 .8.7 1.5 1.5 1.5h3c.8 0 1.5-.7 1.5-1.5v-2.5H13c.8 0 1.5-.7 1.5-1.5V7c0-.8-.7-1.5-1.48-1.5H11.5c0 1.5 0 2-1 2h-2"
+                  />
+                  <path
+                    stroke="#8aadf4"
+                    d="M2.98 10.5H4.5c0-1.5 0-2 1-2h2m0-5"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Python</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Programming fundamentals and problem-solving.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 256 256"
+              >
+                <path d="M0 0h256v256H0z" fill="none" />
+                <rect width="256" height="256" fill="#092e20" rx="28" />
+                <path
+                  fill="#fffffd"
+                  d="M186.377 94.198v66.226c0 22.82-1.67 33.764-6.678 43.225c-4.639 9.092-10.761 14.842-23.375 21.15l-26.53-12.615c12.616-5.936 18.738-11.13 22.633-19.11c4.082-8.161 5.382-17.623 5.382-42.481V94.198zm-45.449-44.12v132.239c-14.655 2.782-25.415 3.895-37.102 3.895c-34.877 0-53.057-15.767-53.057-46.007c0-29.126 19.294-48.047 49.16-48.047c4.638 0 8.163.37 12.43 1.483V50.08zm-38.215 65.082c-14.47 0-22.819 8.905-22.819 24.487c0 15.214 7.978 23.561 22.634 23.561c3.152 0 5.75-.185 9.831-.74v-45.825c-3.339-1.112-6.121-1.483-9.646-1.483m83.664-64.93v29.312h-28.568V50.231z"
+                />
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Django</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Currently learning Django for backend web development.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g fill="none">
+                  <ellipse
+                    cx="12"
+                    cy="5.23"
+                    fill="currentColor"
+                    opacity=".2"
+                    rx="8.88"
+                    ry="3.44"
+                    transform="rotate(-180 12 5.23)"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M20.88 5.23v13.73"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M3.25 16.32c0-1.15 0-1.72.38-2.02c.37-.3.93-.18 2.04.06l5.95 1.27c.21.05.31.07.42.07s.21-.02.42-.06l6.02-1.28c1.12-.24 1.68-.36 2.05-.06s.37.87.37 2.01v2.19c0 .75 0 1.13-.22 1.4c-.2.27-.58.36-1.3.54l-6.86 1.68c-.24.05-.36.08-.48.08s-.24-.03-.48-.09l-6.78-1.67c-.73-.18-1.1-.27-1.31-.54c-.22-.27-.22-.65-.22-1.4z"
+                    opacity=".2"
+                  />
+                  <ellipse
+                    cx="12"
+                    cy="5.23"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    rx="8.88"
+                    ry="3.44"
+                    transform="rotate(-180 12 5.23)"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3.12 11.95c0 1.87 3.98 3.38 8.88 3.38s8.88-1.51 8.88-3.38"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6.06 11.3c.4.26 1.15.59 2.2.8c1.17.22 1.74.25 2.67.25m-4.87 5.31c.4.25 1.15.58 2.2.79c1.17.23 1.74.26 2.67.26m-7.81.12c0 1.87 3.98 3.38 8.88 3.38s8.88-1.51 8.88-3.38M3.12 5.23v13.38"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Database Integration</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Learning how applications connect to databases.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 48 48"
+              >
+                <path d="M0 0h48v48H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    d="m38 21l5 9l-5 1v6h-3l-6-1l-1 7H13l-2-10.381C7.92 29.703 6 25.576 6 21c0-8.837 7.163-16 16-16s16 7.163 16 16"
+                  />
+                  <path
+                    d="M17 19a5 5 0 1 1 5 5v3m0 6v1"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Problem-Solving</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Analytical thinking and finding practical solutions.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 512 512"
+              >
+                <path d="M0 0h512v512H0z" fill="none" />
+                <path
+                  fill="#60a5fa"
+                  fill-rule="evenodd"
+                  d="M256 512c-3.1 0-6.2-.6-9-1.8L33.4 419.1c-9.4-4-15.7-14.1-15.7-25.4v-260c0-.7 0-1.4.1-2.1c.3-4.6 1.7-9 3.9-12.9c1.7-2.8 3.8-5.4 6.4-7.4q1.5-1.2 3.3-2.1L245 2.8c3.5-1.9 7.3-2.8 11-2.7c3.7-.1 7.4.8 11 2.7l213.6 106.4q1.65.9 3.3 2.1c2.6 2 4.7 4.5 6.4 7.4c2.3 3.8 3.6 8.3 3.9 12.9c0 .7.1 1.4.1 2.1v260c0 11.3-6.2 21.4-15.7 25.4L265 510.2c-2.8 1.2-5.9 1.8-9 1.8m-88.4-307c-7.5 4.5-16.7 5-24.6 1.5l-76.6-33.8v202.2l131 55.9v-166c0-21.3 11.6-40.8 30.3-51c17.6-9.9 39.1-9.9 56.8 0l.5.3c18.4 10.3 29.7 29.7 29.7 50.7v166l131-55.9V172.7l-76.9 34c-8 3.5-17.2 3-24.6-1.5l-.2-.1c-12.7-7.6-16.9-24.1-9.3-36.8c2.8-4.8 7.1-8.5 12.1-10.8l61.3-27.3L256 57.3l-152 72.9l60.9 27.1c13.6 6 19.7 21.9 13.6 35.5c-2.3 5.1-6 9.3-10.8 12.1zm88.2-110.4c24.1 0 43.6 20 43.6 44.7S279.9 184 255.8 184s-43.6-20-43.6-44.7s19.5-44.7 43.6-44.7"
+                />
+                <path
+                  fill="#23395d"
+                  fill-rule="evenodd"
+                  d="m167.6 205l.2-.1c12.7-7.6 16.9-24.1 9.3-36.8c-2.8-4.8-7.1-8.5-12.1-10.8l-61-27.1l152-72.9l152 72.9l-61.3 27.3c-13.6 6-19.6 21.9-13.6 35.5c2.3 5.1 6 9.3 10.8 12.1l.2.1c7.5 4.5 16.7 5 24.6 1.5l76.9-34v202.2l-131 55.9v-166c0-21-11.4-40.4-29.7-50.7l-.5-.3c-17.6-9.9-39.1-9.9-56.8 0l-.5.3c-18.4 10.3-29.7 29.7-29.7 50.7v166l-131-55.9V172.7l76.6 33.8c7.9 3.6 17.1 3 24.6-1.5m88.2-110.4c-24.1 0-43.6 20-43.6 44.7s19.5 44.7 43.6 44.7s43.6-20 43.6-44.7s-19.5-44.7-43.6-44.7"
+                  opacity=".25"
+                />
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Project Management</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Coordinating activities, schedules and responsibilities.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 32 32"
+              >
+                <path d="M0 0h32v32H0z" fill="none" />
+                <g fill="currentColor">
+                  <path
+                    d="M17 18v-2h-2v2H3v6h2v-4h10v4h2v-4h10v4h2v-6z"
+                  />
+                  <path
+                    d="M4 32a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2a1 1 0 0 0 0-2m12 4a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2a1 1 0 0 0 0-2m12 4a3 3 0 1 1 0-6a3 3 0 0 1 0 6m0-4a1 1 0 1 0 0 2a1 1 0 0 0 0-2M23 8V6h-2.1a5 5 0 0 0-.73-1.75l1.49-1.49l-1.42-1.42l-1.49 1.49A5 5 0 0 0 17 2.1V0h-2v2.1a5 5 0 0 0-1.75.73l-1.49-1.49l-1.42 1.42l1.49 1.49A5 5 0 0 0 11.1 6H9v2h2.1a5 5 0 0 0 .73 1.75l-1.49 1.49l1.41 1.41l1.49-1.49a5 5 0 0 0 1.76.74V14h2v-2.1a5 5 0 0 0 1.75-.73l1.49 1.49l1.41-1.41l-1.48-1.5A5 5 0 0 0 20.9 8zm-7 2a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                  />
+                  <path
+                    d="M16 8a1 1 0 0 1-1-1a1.4 1.4 0 0 1 0-.2a.7.7 0 0 1 .06-.18a.7.7 0 0 1 .09-.18a2 2 0 0 1 .12-.15a.9.9 0 0 1 .33-.21a1 1 0 0 1 1.09.21l.12.15a.8.8 0 0 1 .09.18a.6.6 0 0 1 .1.18a1.3 1.3 0 0 1 0 .2a1 1 0 0 1-1 1"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Leadership</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Supporting teams and taking responsibility.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g fill="none" fill-rule="evenodd" clip-rule="evenodd">
+                  <path
+                    fill="#020202"
+                    d="M7.9 8.47c.359.42.858.519 1.148.839a.63.63 0 0 1 .13.37a.29.29 0 0 0 .289.289h.16q.634.18 1.288.26q.28.03.56 0q.281-.015.558-.07c.39-.07.77-.19 1.159-.3v.779c0 .589-.7.749-1.129.789a5.4 5.4 0 0 1-1.937-.22c.07-.21-.17-.769-.19-.949a.333.333 0 0 0-.659.09c0 .22 0 .849.1 1.099a.45.45 0 0 0 .27.36c.79.299 1.63.445 2.476.428a2.43 2.43 0 0 0 1.708-.709a1.1 1.1 0 0 0 .24-.589c0-.26 0-.609.06-.918s.16-.38 1.068-1.189c.462-.54.717-1.226.719-1.937a4.6 4.6 0 0 0-.999-2.746a4.14 4.14 0 0 0-4.633-1.298A4.19 4.19 0 0 0 7.38 6.572c-.026.394.018.79.13 1.169c.08.266.213.513.39.729m.259-1.828a3.335 3.335 0 0 1 2.426-2.816a3.11 3.11 0 0 1 3.435.999c.398.486.663 1.068.77 1.688a2 2 0 0 1-.39 1.637l-.999.929a.5.5 0 0 0-.07.12a.35.35 0 0 0-.17 0c-.429 0-.838-.05-1.257-.06h-1.049c-.4.06-.779.16-1.178.21a1.14 1.14 0 0 0-.21-.46c-.26-.32-.749-.44-1.079-.869a1.55 1.55 0 0 1-.25-.649a2.4 2.4 0 0 1 .02-.729"
+                  />
+                  <path
+                    fill="#0c6fff"
+                    d="M5.572 4.216q.103.107.22.2q.105.088.22.16c.23.12.45.169.669.299a.29.29 0 1 0 .43-.39a2.9 2.9 0 0 0-.43-.739a1.2 1.2 0 0 0-.26-.23a1.5 1.5 0 0 0-.3-.169a6 6 0 0 0-.738-.25a.335.335 0 1 0-.37.56c.22.19.37.369.56.559M8.448 1.28q.046.158.11.31q.075.144.17.28c.17.209.36.359.55.568a.29.29 0 1 0 .528-.24a7 7 0 0 0-.12-.808A1.7 1.7 0 0 0 9.368.8a6 6 0 0 0-.53-.589a.32.32 0 0 0-.543-.1a.32.32 0 0 0-.035.37q.07.406.19.799m4.362.899a.29.29 0 0 0 .28.3a.3.3 0 0 0 .3-.28q.169-.327.279-.68a1.5 1.5 0 0 0 0-.369c0-.2-.09-.37-.08-.56a.34.34 0 0 0-.2-.429a.33.33 0 0 0-.42.2a2.3 2.3 0 0 0-.339.64a.9.9 0 0 0-.07.279a.9.9 0 0 0 0 .28q.098.32.25.619m3.396 2.556h1.068l.3-.1c.24-.09.46-.21.709-.31a.33.33 0 0 0 .28-.379a.33.33 0 0 0-.37-.28c-.29 0-.54-.06-.819-.06a1.4 1.4 0 0 0-.35 0a1.4 1.4 0 0 0-.339.11a3.7 3.7 0 0 0-.709.5a.29.29 0 0 0-.085.471a.28.28 0 0 0 .315.048m-6.921 8.278a.3.3 0 0 0-.41 0c-.559.52-1.248.999-1.947 1.538c-.419.32-.828.66-1.288.949q-.71.482-1.508.799a.32.32 0 0 0-.24.4a.33.33 0 0 0 .4.239a7 7 0 0 0 2.127-.71a6 6 0 0 0 .809-.508q.408-.259.779-.57q.726-.8 1.298-1.717a.29.29 0 0 0-.02-.42m2.996.28a.29.29 0 0 0-.28-.28a.3.3 0 0 0-.31.28c-.089.49-.229.999-.299 1.488q-.03.33 0 .659q.006.343.07.679c.087.527.252 1.039.49 1.518a.33.33 0 0 0 .547.176a.33.33 0 0 0 .072-.386a7.6 7.6 0 0 1-.1-1.418v-.998c-.03-.6-.13-1.159-.19-1.718m6.351 4.384a.33.33 0 0 0 .46-.08a.32.32 0 0 0-.08-.46a10 10 0 0 1-.81-.788c-.259-.28-.479-.58-.718-.88c-.24-.299-.46-.588-.7-.878c-.499-.619-.998-1.198-1.447-1.807a.293.293 0 1 0-.51.29q.39.999.91 1.937q.242.39.528.749q.288.364.63.679c.527.481 1.11.897 1.737 1.238"
+                  />
+                  <path
+                    fill="#020202"
+                    d="M3.555 18.006A2.786 2.786 0 0 0 .85 20.762c.05 3.116 5.752 3.715 5.542-.2a2.636 2.636 0 0 0-2.836-2.556m-1.767 2.796a1.797 1.797 0 0 1 1.847-1.697a1.637 1.637 0 0 1 1.818 1.538c.38 3.145-3.805 2.436-3.665.14zm12.351.909c-.409-.57-.808-1.598-1.378-2.287a2.5 2.5 0 0 0-1.158-.839a.64.64 0 0 0-.66.28c-.149.23-.478.849-.508.899l-1.868 3.295a.29.29 0 0 0 .301.443a.3.3 0 0 0 .189-.123l2.166-3.076s.28-.25.45-.46q.237.255.42.55c.439.659.808 1.468 1.168 1.997q.245.192.469.41h-.05a3 3 0 0 1-.48.18a5.3 5.3 0 0 1-1.237.209c-.66.05-1.329 0-1.998 0a.34.34 0 0 0 0 .67c.69.049 1.368.129 2.057.139c.484.013.967-.034 1.438-.14q.397-.075.77-.23c.216-.098.405-.249.548-.439a.63.63 0 0 0 0-.65c-.18-.229-.589-.758-.639-.828m8.998-.509a5.3 5.3 0 0 0-.27-2.087a1.53 1.53 0 0 0-1.508-.73a7.5 7.5 0 0 0-1.048.1c-.759.12-1.498.32-2.267.4a.34.34 0 0 0-.31.36a.33.33 0 0 0 .36.3c.779 0 1.548-.19 2.317-.26q.469-.039.938 0c.37 0 .57.11.67.3c.108.546.108 1.11 0 1.657q.03.42 0 .839a.75.75 0 0 1-.11.469a.75.75 0 0 1-.39.11c-.39.06-.839.06-1.098.11l-1.129.11h-.789a2.5 2.5 0 0 1-.459 0a.8.8 0 0 1-.32-.09c-.12-.07-.15-.3-.19-.55a12 12 0 0 1-.119-1.378a7 7 0 0 1 0-.779a7 7 0 0 1 0-.769a.292.292 0 0 0-.58-.08q-.07.408-.099.82a8 8 0 0 0 0 .828a9.7 9.7 0 0 0 0 1.738c.037.352.2.678.46.919c.156.111.332.192.519.24q.334.09.679.129l.908.05l1.269-.08c.32-.05.878 0 1.318-.13c.28-.054.542-.182.759-.37c.206-.205.343-.47.39-.758c.088-.467.122-.943.099-1.418"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Creativity</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Contributing ideas and exploring new approaches.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="2em"
+                height="2em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <ellipse cx="11" cy="5" rx="8" ry="3" />
+                  <path
+                    stroke-linecap="round"
+                    d="M6 10.842c.602.18 1.274.33 2 .44M3 12c0 1.53 3.054 2.792 7 2.977m-4 2.865c.602.18 1.274.33 2 .44"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11 22c-4.418 0-8-1.343-8-3V5m16 0v6"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    d="M17 20.714V22m0-1.286a3.36 3.36 0 0 1-2.774-1.43m5.548-3.567a3.12 3.12 0 0 1 0 3.566A3.36 3.36 0 0 1 17 20.714m0-6.428c1.157 0 2.176.568 2.774 1.43M17 14.287a3.36 3.36 0 0 0-2.774 1.43M17 14.287V13m4 1.929l-1.226.788M13 20.07l1.226-.788M13 14.93l1.226.788M21 20.07l-1.226-.788m-5.548-3.566a3.12 3.12 0 0 0 0 3.566"
+                  />
+                </g>
+              </svg>
+
+              <h3 class="font-bold text-blue-950">Backend Development</h3>
+
+              <p class="mt-2 text-sm leading-6 text-gray-600">
+                Beginner-level learning focused on server-side development.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section
+        id="experience"
+        class="scroll-mt-20 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div class="mx-auto max-w-5xl">
+          <div class="mb-10 text-center sm:mb-12">
+           <h2
+              class="text-3xl font-extrabold text-blue-950 sm:text-4xl"
+            >
+              Experience &amp; Leadership
+            </h2>
+          </div>
+
+          <div class="space-y-8 border-l-2 border-purple-200 pl-5 sm:pl-6">
+            <article
+              class="relative rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <span
+                class="absolute -left-[28px] top-7 h-4 w-4 rounded-full border-4 border-white bg-purple-600 sm:-left-[34px]"
+              ></span>
+
+              <p class="text-sm font-semibold text-purple-600">
+                2025 – Present
+              </p>
+
+              <h3 class="mt-2 text-xl font-bold text-blue-950">
+                Office Management
+              </h3>
+
+              <p class="mt-1 font-medium text-gray-600">Matheletes</p>
+
+              <ul class="mt-4 list-disc space-y-2 pl-5 leading-7 text-gray-600">
+                <li>
+                  Supported offline operations and online initiatives for
+                  educational programs.
+                </li>
+                <li>
+                  Managed digital platforms, student engagement, scheduling
+                  and communications.
+                </li>
+                <li>
+                  Helped coordinate student events and farewell programs,
+                  including “২৩ এর সমীকরণ”.
+                </li>
+              </ul>
+            </article>
+
+            <article
+              class="relative rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <span
+                class="absolute -left-[28px] top-7 h-4 w-4 rounded-full border-4 border-white bg-blue-600 sm:-left-[34px]"
+              ></span>
+
+              <p class="text-sm font-semibold text-purple-600">
+                2018 – 2021
+              </p>
+
+              <h3 class="mt-2 text-xl font-bold text-blue-950">
+                Former Youth Chief
+              </h3>
+
+              <p class="mt-1 font-medium text-gray-600">
+                Bangladesh Red Crescent Youth (BDRCY)
+              </p>
+
+              <p class="mt-4 leading-7 text-gray-600">
+                Served in a youth leadership role, demonstrating
+                responsibility and contributing to volunteer activities
+                at CMP School and College.
+              </p>
+            </article>
+
+            <article
+              class="relative rounded-2xl border border-gray-100 bg-white p-5 shadow-sm sm:p-6"
+            >
+              <span
+                class="absolute -left-[28px] top-7 h-4 w-4 rounded-full border-4 border-white bg-cyan-600 sm:-left-[34px]"
+              ></span>
+
+              <p class="text-sm font-semibold text-purple-600">
+                Previous Experience
+              </p>
+
+              <h3 class="mt-2 text-xl font-bold text-blue-950">
+                Student Representative (SR)
+              </h3>
+
+              <p class="mt-1 font-medium text-gray-600">
+                PCIU Computer Club
+              </p>
+
+              <p class="mt-4 leading-7 text-gray-600">
+                Assisted with planning, coordination and student engagement
+                as a former SR of PCIU Computer Club.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Vision -->
+      <section
+        id="commitments"
+        class="scroll-mt-20 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-8 sm:gap-10 md:grid-cols-2 md:gap-12"
+        >
+          <div>
+            <p
+              class="mb-3 font-semibold uppercase tracking-[0.2em] text-purple-600"
+            >
+              My Vision
+            </p>
+
+            <h2
+              class="mb-6 text-3xl font-extrabold leading-tight text-blue-950 sm:text-4xl md:text-5xl"
+            >
+              A Stronger Club.
+              <span class="text-purple-600">A Better Community.</span>
+            </h2>
+
+            <p class="mb-5 leading-7 text-gray-600 sm:leading-8">
+              I believe a computer club should be more than a name on a
+              notice board. It should be a place where every member can
+              learn, compete, lead and grow.
+            </p>
+
+            <p class="leading-7 text-gray-600 sm:leading-8">
+              As Vice President, I will work to make PCIU Computer Club
+              active, organized and open to every member, with clear
+              responsibilities and fair opportunities for all.
+            </p>
+          </div>
+
+          <div
+            class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-950 via-blue-900 to-purple-800 p-6 text-white sm:p-8 md:p-12"
+          >
+            <div
+              class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-cyan-400/20 blur-2xl"
+            ></div>
+
+            <p
+              class="relative text-sm font-semibold uppercase tracking-widest text-cyan-300"
+            >
+              The Goal
+            </p>
+
+            <h3
+              class="relative mt-5 text-3xl font-extrabold leading-snug sm:text-4xl"
+            >
+              Learn Together.
+              <br />
+              Compete Together.
+              <br />
+              Grow Together.
+            </h3>
+
+            <div class="relative mt-8 border-t border-white/20 pt-5">
+              <p class="text-sm leading-7 text-blue-100">
+                Every member deserves an opportunity to participate,
+                contribute and be recognized.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Commitments -->
+      <section
+        class="scroll-mt-20 bg-slate-50 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
+
+            <h2
+              class="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl"
+            >
+              My Commitments
+            </h2>
+
+            <p class="mt-5 leading-7 text-gray-600">
+              Six priorities to build a more active, organized and inclusive
+              PCIU Computer Club.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-purple-100 text-2xl text-purple-700"
+              >
+                <span>01</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                Working with the President
+              </h3>
+
+              <p class="leading-7 text-gray-600">
+                I will work closely with the President, share ideas openly
+                and support decisions that benefit the club. I will handle
+                disagreements respectfully and keep the club's interests
+                first.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-blue-100 text-2xl text-blue-700"
+              >
+                <span>02</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                Tech Competitions
+              </h3>
+
+              <p class="mb-4 leading-7 text-gray-600">
+                I will work toward regular technical events that help members
+                develop skills, test ideas and showcase their creativity.
+              </p>
+
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>✓ Programming and problem-solving contests</li>
+                <li>✓ Web and app development challenges</li>
+                <li>✓ Quizzes and tech talks</li>
+                <li>✓ Project showcases</li>
+              </ul>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-cyan-100 text-2xl text-cyan-700"
+              >
+                <span>03</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                E-Sports Competitions
+              </h3>
+
+              <p class="leading-7 text-gray-600">
+                I will work to arrange well-managed e-sports tournaments
+                with fair rules, proper scheduling and transparent results
+                to build teamwork and community spirit.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-green-100 text-2xl text-green-700"
+              >
+                <span>04</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                Sports Competitions
+              </h3>
+
+              <p class="leading-7 text-gray-600">
+                I will encourage indoor and outdoor sports events that
+                strengthen friendships, promote well-being and bring
+                members together beyond technology.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-orange-100 text-2xl text-orange-700"
+              >
+                <span>05</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                Leadership &amp; Responsibility
+              </h3>
+
+              <p class="leading-7 text-gray-600">
+                When the President is unavailable, I will take responsibility
+                within my authority, make timely and fair decisions, keep
+                club activities running and report back to the President.
+              </p>
+            </article>
+
+            <article
+              class="min-w-0 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-7"
+            >
+              <div
+                class="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-pink-100 text-2xl text-pink-700"
+              >
+                <span>06</span>
+              </div>
+
+              <h3 class="mb-3 text-xl font-bold text-blue-950">
+                Fair Committee Work
+              </h3>
+
+              <p class="mb-4 leading-7 text-gray-600">
+                I will promote clear duties, fair task distribution
+                and accountability across committees.
+              </p>
+
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>✓ Assign tasks fairly</li>
+                <li>✓ Set duties and deadlines</li>
+                <li>✓ Follow up on progress</li>
+                <li>✓ Recognize active contributors</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Promise -->
+      <section
+        id="promises"
+        class="scroll-mt-20 px-5 py-14 sm:px-8 sm:py-16 md:px-12 md:py-20"
+      >
+        <div
+          class="mx-auto max-w-5xl overflow-hidden rounded-3xl bg-gradient-to-br from-blue-950 via-blue-900 to-purple-900 p-6 text-white shadow-xl sm:p-8 md:p-14"
+        >
+          <div class="mx-auto max-w-3xl text-center">
+            <div
+              class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full border border-cyan-300/40 bg-cyan-300/10 text-3xl text-cyan-300"
+            >
+              <img
+                src="/logo.jpg"
+                alt="Projector election symbol"
+                class="h-10 w-10 rounded-full object-cover"
+              />
+            </div>
+
+            <p
+              class="mb-3 font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              My Promise to You
+            </p>
+
+            <h2 class="mb-7 text-3xl font-extrabold sm:text-4xl md:text-5xl">
+              Leadership Through Action
+            </h2>
+
+            <p class="text-base leading-8 text-blue-100 sm:text-lg">
+              I will be honest, active and approachable. I will listen to
+              every member's suggestions, share responsibility rather than
+              take credit and work to make PCIU Computer Club stronger
+              than before.
+            </p>
+
+            <div class="my-8 h-px bg-white/20"></div>
+
+            <p class="text-2xl font-extrabold text-white sm:text-3xl">
+              Together, Let's Learn, Compete &amp; Grow.
+            </p>
+
+            <p class="mt-6 text-sm text-blue-200">
+              Thank you for your trust and support.
+            </p>
+
+            <p class="mt-4 font-semibold text-cyan-300">
+              — Saidul Karim Ayas
+            </p>
+
+            <p class="mt-1 text-sm text-blue-200">
+              Vice President Candidate, PCIU Computer Club
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="scroll-mt-20 bg-slate-50 px-5 py-14 sm:px-8 sm:py-16 md:px-12"
+      >
+        <div class="mx-auto max-w-4xl text-center">
+          <p
+            class="mb-3 font-semibold uppercase tracking-widest text-purple-600"
+          >
+            Stay Connected
+          </p>
+
+          <h2
+            class="text-3xl font-extrabold text-blue-950 sm:text-4xl"
+          >
+            Let's Build a Better Club Together
+          </h2>
+
+          <p class="mx-auto mt-5 max-w-2xl leading-7 text-gray-600">
+            Your ideas, suggestions and participation matter.
+            Let's work together for a stronger club community.
+          </p>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/saidul-karim-ayas-5969b23b9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-lg bg-blue-950 px-6 py-3 font-semibold text-white transition hover:bg-purple-700"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a
+              href="saidulayas@gmail.com"
+              class="rounded-lg border border-blue-950 px-6 py-3 font-semibold text-blue-950 transition hover:bg-blue-950 hover:text-white"
+            >
+              Contact Me ✉
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#071329] px-5 py-8 text-white sm:px-8 md:px-12">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left"
+      >
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="/logo.jpg"
+            alt="Projector election symbol"
+            class="h-11 w-11 rounded-full object-cover"
+          />
+
+          <div>
+            <p class="font-bold tracking-wide">AYAS</p>
+
+            <p class="text-xs text-cyan-300">
+              Vice President Candidate
+            </p>
+          </div>
+        </a>
+
+        <p class="text-sm text-gray-400">
+          © 2026 Saidul Karim Ayas. All rights reserved.
+        </p>
+
+        <a
+          href="#top"
+          class="text-sm font-semibold text-cyan-300 transition hover:text-white"
+        >
+          Back to Top ↑
+        </a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

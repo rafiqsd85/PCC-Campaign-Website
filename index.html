@@ -161,7 +161,7 @@
     </header>
 
        <!-- Banner -->
- 
+
 <section
   class="relative flex min-h-[440px] w-full items-start
          bg-blue-950 bg-contain bg-top bg-no-repeat
@@ -170,6 +170,7 @@
          lg:min-h-[650px]"
   style="background-image: url('/banner.jpg');"
 >
+  <!-- Background Overlay -->
   <div
     class="absolute inset-0 bg-gradient-to-b
            from-blue-950/50 via-blue-950/30 to-blue-950
@@ -178,12 +179,14 @@
            sm:to-transparent"
   ></div>
 
+  <!-- Banner Content -->
   <div
     class="relative z-10 ml-auto w-full px-5 pt-56 pb-4
            sm:w-[65%] sm:px-8 sm:pt-14 sm:pb-0
            md:w-[58%] md:pt-16
            lg:w-[50%] lg:px-10 lg:pt-24"
   >
+    <!-- Candidate Badge -->
     <span
       class="mb-3 inline-block rounded-full border
              border-cyan-400/40 bg-cyan-950/60
@@ -194,6 +197,7 @@
       Vice President • PCC
     </span>
 
+    <!-- Candidate Name -->
     <h1
       class="mb-1 font-['Poppins',sans-serif]
              text-3xl font-extrabold leading-tight
@@ -208,6 +212,120 @@
         Ayas
       </span>
     </h1>
+
+    <!-- Election Date -->
+    <p
+      class="mb-6 text-sm font-medium tracking-widest
+             text-cyan-200 sm:text-base"
+    >
+      ELECTION DAY • 29 OCTOBER 2026 • 11:00 AM
+    </p>
+      <!-- Countdown Cards -->
+      <div
+        id="countdown"
+        class="mx-auto grid w-full max-w-[620px]
+               grid-cols-4 gap-2 sm:gap-3"
+      >
+        <!-- Days -->
+        <div
+          class="flex flex-col items-center justify-center
+                 rounded-xl border border-cyan-400
+                 bg-blue-950/80 px-1 py-3
+                 shadow-[0_0_12px_rgba(34,211,238,0.12)]
+                 sm:py-4"
+        >
+          <span
+            id="days"
+            class="text-2xl font-extrabold leading-none
+                   text-cyan-300 sm:text-4xl"
+          >00</span>
+
+          <span
+            class="mt-2 text-[9px] font-medium
+                   text-white sm:text-xs"
+          >DAYS</span>
+        </div>
+
+        <!-- Hours -->
+        <div
+          class="flex flex-col items-center justify-center
+                 rounded-xl border border-cyan-400
+                 bg-blue-950/80 px-1 py-3
+                 shadow-[0_0_12px_rgba(34,211,238,0.12)]
+                 sm:py-4"
+        >
+          <span
+            id="hours"
+            class="text-2xl font-extrabold leading-none
+                   text-cyan-300 sm:text-4xl"
+          >00</span>
+
+          <span
+            class="mt-2 text-[9px] font-medium
+                   text-white sm:text-xs"
+          >HOURS</span>
+        </div>
+
+        <!-- Minutes -->
+        <div
+          class="flex flex-col items-center justify-center
+                 rounded-xl border border-cyan-400
+                 bg-blue-950/80 px-1 py-3
+                 shadow-[0_0_12px_rgba(34,211,238,0.12)]
+                 sm:py-4"
+        >
+          <span
+            id="minutes"
+            class="text-2xl font-extrabold leading-none
+                   text-cyan-300 sm:text-4xl"
+          >00</span>
+
+          <span
+            class="mt-2 text-[9px] font-medium
+                   text-white sm:text-xs"
+          >MINUTES</span>
+        </div>
+
+        <!-- Seconds -->
+        <div
+          class="flex flex-col items-center justify-center
+                 rounded-xl border border-cyan-400
+                 bg-blue-950/80 px-1 py-3
+                 shadow-[0_0_12px_rgba(34,211,238,0.12)]
+                 sm:py-4"
+        >
+          <span
+            id="seconds"
+            class="text-2xl font-extrabold leading-none
+                   text-cyan-300 sm:text-4xl"
+          >00</span>
+
+          <span
+            class="mt-2 text-[9px] font-medium
+                   text-white sm:text-xs"
+          >SECONDS</span>
+        </div>
+      </div>
+
+      <!-- Bottom Tagline -->
+      <div
+        class="mt-4 flex items-center justify-center gap-3"
+      >
+        <span
+          class="hidden h-px w-12 bg-cyan-400/50 sm:block"
+        ></span>
+
+        <p
+          class="text-[9px] font-medium uppercase
+                 tracking-widest text-blue-200 sm:text-xs"
+        >
+          Your Vote Builds a Stronger PCC
+        </p>
+
+        <span
+          class="hidden h-px w-12 bg-cyan-400/50 sm:block"
+        ></span>
+    </div>
   </div>
 </section>
 
